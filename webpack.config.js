@@ -13,10 +13,10 @@ module.exports = {
 			{ test : /\.ts$/, exclude: /\.component.ts$/, loader: 'ts'},
 			{ test : /\.html$/, loader: 'raw'},
 			{ test : /\.css$/, loader: 'raw'}
-		],
-		resolve : {
-			extensions: ['', '.js', '.ts', '.html', '.css']
-		}
+		]
+	},
+	resolve : {
+		extensions: ['', '.js', '.ts', '.html', '.css']
 	},
 	plugins : [
 		new HtmlWebpackPlugin({
